@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    color: aliceblue;
+}
+ul {
+    border: .5rem;
+   border-color: aqua;
+   border-style: dashed;
+}
