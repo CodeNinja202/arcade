@@ -2,16 +2,16 @@ const scoreDisplay = document.getElementById('score');
 const holes = document.getElementsByClassName('hole');
 const holes2 = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
-const civilan_mole = document.querySelectorAll('.civilan');
+//const civilan_mole = document.querySelectorAll('.civilan');
 const timeleft = document.querySelector('#time-left');
 const button = document.querySelector('#start');
 const gameGrid = document.getElementById('grid');
 
 
 let result = 0;
-let hitPostition1;
+//let hitPostition1;
 let hitPostition2;
-let currentTime = 3;
+let currentTime;
 let timerId = false;
 
 
@@ -22,14 +22,14 @@ let timerId = false;
 
 
 
-function randomSquare() {
+function randomMole() {
   holes2.forEach(hole => {
       hole.classList.remove('mole')
   });
 
-  let randomSquare = holes[Math.floor(Math.random() * 9)]
-  randomSquare.classList.add('mole');
-  hitPostition2 = randomSquare.id;
+  let randomMole = holes[Math.floor(Math.random() * 9)]
+  randomMole.classList.add('mole');
+  hitPostition2 = randomMole.id;
 
 
 }
@@ -41,7 +41,7 @@ function randomSquare() {
 
 //Random Civilan's 
 
-function randomCivilan() {
+/*function randomCivilan() {
     holes2.forEach(hole => {
         hole.classList.remove('civilan')
     });
@@ -51,7 +51,7 @@ function randomCivilan() {
     hitPostition1 = randomCivilan.id;
 
 
-}
+}*/
 
 
 /*
@@ -85,18 +85,18 @@ gameGrid.addEventListener('click', function(clickEvent) {
 
 });
 
+
+//Start Game
 function startGame(){
   scoreDisplay.textContent = 0;
   timerId = false;
   hitPostition2
-  currentTime = 3;
+  currentTime = 30;
  
-  randomSquare()
-  {
-    timerId = setInterval(randomSquare, 800)
+  //
+  randomMole()
+  timerId = setInterval(randomMole, 900) 
   
-    
-  } ;
   
   
   
@@ -109,7 +109,7 @@ function startGame(){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
         
-       alert('GAME OVER! your Final score is ' + result)
+       alert('GAME OVER! Moles hit: ' + result)
     }
   return false;
 }

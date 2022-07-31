@@ -23,7 +23,7 @@ body {
     background-size:cover;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    
+    border-radius: 2rem;
   }
 
 
@@ -34,7 +34,7 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-  margin-top: rem;
+  margin-top: 1rem;
  
 }
 
@@ -91,3 +91,46 @@ button:hover {
   cursor: pointer;
   background-color: green;
 }
+
+@media only screen and (max-width: 1050px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('gameBackGround.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+   
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #grid {
+    width: 400px;
+    height: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+   padding: 2rem;
+  }
+
+  }
+
+
+  @media only screen and (max-width: 1090px) {
+  html {
+    background-color: antiquewhite; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+   
+    }
+  
+    }
