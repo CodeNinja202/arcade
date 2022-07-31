@@ -95,7 +95,7 @@ function startGame(){
  
   //
   randomMole()
-  timerId = setInterval(randomMole, 500)
+  timerId = setInterval(randomMole, 150)
   
   
   
