@@ -43,7 +43,7 @@ body {
 
 .hole:after {
   display: block;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/dirt.svg') bottom center no-repeat;
+  background: url('https://svgshare.com/i/8jj.svg') bottom center no-repeat;
   background-size: contain;
   content: '';
   width: 100%;
@@ -54,7 +54,7 @@ body {
 }
 
 .mole {
-   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/mole.svg');
+   background-image: url('Mole.png');
    background-size: cover;
 
    border-top-right-radius: 2rem;
