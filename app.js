@@ -1,6 +1,5 @@
 /*
 Requirements
-
 - Initial State:
     - A board that contains the snake + apple
     - A grid layout
@@ -15,7 +14,6 @@ Requirements
 - Keep track of growing the snakes body
 - Stop game if snake collides with wall or self
 - Keep track of the game controls
-
 - Potential Functions:
     - Adds length to the snakes body when an apple eaten
     - Handles the Game controls
@@ -24,7 +22,6 @@ Requirements
     - Random placement of the apple
     - When the game is over
     - Reset the game
-
    HW:
    - When Game is Over , RESET the game
 */
@@ -220,7 +217,15 @@ gameControls.addEventListener("click", function (event) {
     let direction = event.target.innerText.toUpperCase()
     turnSnake(direction)
 })
+let restartButton = document.getElementById("restart")
+restartButton.addEventListener("click", function () {
+    gameControls.style.display = "none"
+    score.innerHTML=0;
+    clearHTMLboard()
+    newBoard()
+    resetInitialState()
+    updateHTMLBoard()
 
+})
 resetInitialState()
 updateHTMLBoard()
-

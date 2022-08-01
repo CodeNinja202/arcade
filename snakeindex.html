@@ -5,9 +5,10 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <a href="arcade.html">
+            <button>Arcade</button>
+            </a>
         <h1> Snake Game</h1>
-        <h2>Score</h2>
-        <h2 id="score">0</h2>
         <h3 id="prompt">
             Welcome to Snake! Ready? <button class="start-game">START</button>
         </h3>
@@ -17,6 +18,7 @@
             <button class="right">RIGHT</button>
             <button class="down">DOWN</button>
         </div>
+        <h3 id="scoreStrip">Score: <span id="score"></span></h3>
         <main id="board">
             <div class="cell" data-coordinates="0,0"></div>
             <div class="cell" data-coordinates="0,1"></div>
@@ -174,6 +176,7 @@
             <div class="cell" data-coordinates="11,10"></div>
             <div class="cell" data-coordinates="11,11"></div>
           </main>
+          <button id="restart">Restart</button>
     </body>
     <script src="app.js"></script>
 </html>
