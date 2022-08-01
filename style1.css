@@ -1,5 +1,14 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+
 body {
-    background-color: black;
+   background-image: url("arcadeBackground.jpeg");
+   background-repeat:no-repeat;
+   background-size:cover;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -7,18 +16,12 @@ body {
     align-items: center;
 }
 
-h1 {
-    color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
-p {
-    color: aliceblue;
-}
+
+
 ul {
+   margin-top: 20rem;
+  
     border: .5rem;
    border-color: aqua;
    border-style: dashed;
